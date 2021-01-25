@@ -1,0 +1,69 @@
+
+<html>
+    <head>
+      <!-- metadata goes here -->
+    </header>
+    
+    <body>
+      <h1 id="title">FreeCodeCamp survey form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label">Name</label>
+        </div>
+        <div>
+          <input type="text" placeholder="Enter your name" id="name" required>
+        </div>
+    
+        <div>
+          <label for="email" id="email-label">Email</label>
+        </div>
+        <div>
+          <input type="email" placeholder="Enter your email" id="email" required>
+        </div>
+    
+        <div>
+          <label for="age" id="number-label">Age (optional)</label>
+        </div>
+        <div>
+          <input type="number" placeholder="Enter your age" id="number" min="7" max="100" required>
+        </div>
+    
+        <div>
+          <label id="dropdown-survey">Which option best describes your current role?</label>
+        </div>
+        <select name="roles" id="dropdown">
+          <option value="student">Student</option>
+          <option value="full-time-job">Full time job</option>
+          <option value="full-time-student">Full time student</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        
+    
+        <div>
+          <label id="recomend-survey">Would you recomend FreeCodeCamp to a friend?</label>
+        </div>
+        <label for="definitely"><input id="definitely" type="radio" name="rec-options" value="definitely">Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="rec-options" value="maybe">Maybe</label>
+        <label for="not-sure"><input id="not-sure" type="radio" name="rec-options" value="not-sure">Not sure</label>
+    
+        <div>
+          <label for="improve-survey" id="improve survey">What would you like us to improve on?</label>
+        </div>
+          <label for="front-end-projects"><input id="front-end-projects" type="checkbox" name="improve-options" value="front-end-projects">Front end projects</label>
+          <label for="back-end-projects"><input id="back-end-projects" type="checkbox" name="improve-options" value="back-end-projects">Back end projects</label>
+          <label for="data-visualization"><input id="data-visualization" type="checkbox" name="improve-options" value="data-visualization">Data visualization</label>
+    
+          <div>
+            <label for="comments" id="comments">Any comments or suggestions?</label>
+          </div>
+        <textarea id="comments" placeholder="Enter your comment here"></textarea>
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </body>
+    
+    </html>
